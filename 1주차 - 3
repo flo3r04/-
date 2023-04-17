@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+	int a = 20 / 3;
+	int b = 20;
+	int c = 3;
+	int x = b - (a * c);
+	x = b - (a * c);
+	printf("20 / 3 의 몫 : %d\n", a);
+	printf("20 / 3 의 나머지 : %d\n", x);
+	return 0;
+}
