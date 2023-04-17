@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+
+{
+	int ten, fifty, oneh, fiveh, total, bill, coin;
+
+	printf("10원의 개수 입력 : ");
+	scanf_s("%d", &ten);
+	printf("50원 개수 입력 : ");
+	scanf_s("%d", &fifty);
+	printf("100원의 개수 입력 : ");
+	scanf_s("%d", &oneh);
+	printf("500원의 개수 입력 : ");
+	scanf_s("%d", &fiveh);
+
+	total = (10 * ten) + (50 * fifty) + (100 * oneh) + (500 * fiveh);
+	bill = (total / 1000) * 1000;
+	coin = total - bill;
+	printf("총액 : %d\n", total);
+	printf("지폐지급액 : %d\n", bill);
+	printf("동전지급액 : %d\n", coin);
+
+
+
+	return 0;
+
+}
